@@ -9,5 +9,5 @@ RUN npm -g install gitbook-cli
 
 WORKDIR /book
 
-ENTRYPOINT ["gitbook", "serve"]
+ENTRYPOINT ["gitbook"]
 EXPOSE 4000

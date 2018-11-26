@@ -1,4 +1,4 @@
-FROM node:10-jessie
+FROM doneproperly/php-composer-node-npm
 MAINTAINER Get IT Done Properly <docker@doneproperly.xyz>
 
 RUN apt-get update && apt-get install -y \
@@ -7,7 +7,7 @@ RUN apt-get update && apt-get install -y \
 
 RUN npm -g install gitbook-cli
 
-WORKDIR /book
+WORKDIR /code
 
 ENTRYPOINT ["gitbook"]
 EXPOSE 4000
